@@ -192,6 +192,120 @@ input[type="tel"], input[type="search"] {
     margin-bottom: 2rem;
 }
 
+/* --- ESTILOS DE VARIANTES (Tallas/Tamaños) --- */
+.product-variants {
+    margin-bottom: 1.5rem;
+}
+
+.variant-label {
+    display: block;
+    font-weight: 600;
+    font-size: 0.9rem;
+    margin-bottom: 0.8rem;
+    color: var(--text-main);
+}
+
+.variant-options {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.variant-btn {
+    padding: 0.6rem 1.2rem;
+    border: 2px solid #dfe6e9;
+    background: white;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.variant-btn:hover {
+    border-color: var(--primary);
+    color: var(--primary);
+}
+
+.variant-btn.active {
+    background: var(--primary);
+    border-color: var(--primary);
+    color: white;
+}
+
+/* --- ESTILOS DE VARIANTES INTERACTIVAS (SIN JS) --- */
+
+/* Separador de productos en la misma página */
+.product-section-divider {
+    margin-bottom: 6rem;
+    padding-bottom: 4rem;
+    border-bottom: 1px solid rgba(0,0,0,0.05);
+}
+
+.product-variants {
+    margin: 1.5rem 0;
+}
+
+.variant-label {
+    display: block;
+    font-weight: 600;
+    font-size: 0.9rem;
+    margin-bottom: 0.8rem;
+    color: var(--text-main);
+}
+
+.variant-options {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+/* Ocultar el radio button nativo */
+.variant-options input[type="radio"] {
+    display: none;
+}
+
+/* El label estilizado como botón */
+.variant-btn {
+    display: inline-block;
+    padding: 0.6rem 1.2rem;
+    border: 2px solid #dfe6e9;
+    background: white;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: var(--transition);
+    font-family: inherit;
+    user-select: none;
+}
+
+.variant-btn:hover {
+    border-color: var(--primary);
+    color: var(--primary);
+}
+
+/* Estado SELECCIONADO: Cuando el input hermano previo está chequeado */
+.variant-options input[type="radio"]:checked + .variant-btn {
+    background: var(--primary);
+    border-color: var(--primary);
+    color: white;
+}
+
+/* Estilo para los botones de cantidad (Consistencia) */
+.btn-qty {
+    background: white;
+    border: 1px solid #dfe6e9;
+    width: 35px;
+    height: 35px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: var(--transition);
+}
+
+.btn-qty:hover {
+    background: #f1f2f6;
+}
+
 /* --- 5. CARRITO Y CONTROLES DE CANTIDAD --- */
 
 .cart-item {

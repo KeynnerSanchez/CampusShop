@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CampusShop | Producto</title>
+    <title>CampusShop | Productos</title>
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/layout.css">
     <link rel="stylesheet" href="css/components.css">
@@ -22,37 +22,177 @@
         </nav>
     </header>
 
-    <main class="container product-detail-view">
-        <div class="product-visual">
-            <div class="main-image-card">
-                <img src="img/producto1.jpg     " alt="Libreta Campus Premium">
+    <main class="container">
+        
+        <section class="product-detail-view product-section-divider">
+            <div class="product-visual">
+                <div class="main-image-card"><img src="img/Libreta_Camper.jpg" alt="Libreta"></div>
             </div>
-        </div>
-
-        <div class="product-info-panel">
-            <span class="category-tag">Papelería Universitaria</span>
-            <h1>Libreta Campus Premium</h1>
-            <p class="product-price">$15.000</p>
-            <p class="product-description">
-                Ideal para tus apuntes más importantes. Esta libreta cuenta con tapa dura resistente, 
-                papel de 90g que evita el traspaso de tinta y un diseño minimalista pensado para el día a día en el campus.
-            </p>
-
-            <div class="purchase-actions">
-                <div class="quantity-selector">
-                    <button class="btn-qty" type="button">-</button>
-                    <span class="qty-number">1</span>
-                    <button class="btn-qty" type="button">+</button>
-                </div>
+            <div class="product-info-panel">
+                <span class="category-tag">Papelería</span>
+                <h1>Libreta Campus Premium</h1>
+                <p class="product-price">$15.000</p>
                 
-                <a href="carrito.html" class="btn-primary">Añadir al Carrito</a>
-            </div>
+                <p class="product-description">Tapa dura resistente y papel de 90g pensado para el día a día en el campus.</p>
 
-            <div class="product-meta">
-                <p><strong>Disponibilidad:</strong> En Stock</p>
-                <p><strong>Envío:</strong> Recogida gratuita en Biblioteca</p>
+                <div class="product-variants">
+                    <span class="variant-label">Seleccionar Tamaño:</span>
+                    <div class="variant-options">
+                        <input type="radio" name="size-libreta" id="lib-p"><label for="lib-p" class="variant-btn">Pequeña</label>
+                        <input type="radio" name="size-libreta" id="lib-m" checked><label for="lib-m" class="variant-btn">Mediana</label>
+                        <input type="radio" name="size-libreta" id="lib-g"><label for="lib-g" class="variant-btn">Grande</label>
+                    </div>
+                </div>
+
+                <div class="purchase-actions">
+                    <div class="quantity-selector">
+                        <button class="btn-qty">-</button><span class="qty-number">1</span><button class="btn-qty">+</button>
+                    </div>
+                    <a href="carrito.html" class="btn-primary">Añadir al Carrito</a>
+                </div>
             </div>
-        </div>
+        </section>
+
+        <section class="product-detail-view product-section-divider">
+            <div class="product-visual">
+                <div class="main-image-card"><img src="img/Buzo.jpg" alt="Buzo"></div>
+            </div>
+            <div class="product-info-panel">
+                <span class="category-tag">Ropa</span>
+                <h1>Buzo Campus "Over-Size"</h1>
+                <p class="product-price">$85.000</p>
+                
+                <p class="product-description">Algodón premium ultra suave. Perfecto para los días de frío en la universidad.</p>
+
+                <div class="product-variants">
+                    <span class="variant-label">Seleccionar Talla:</span>
+                    <div class="variant-options">
+                        <input type="radio" name="talla-buzo" id="buzo-s"><label for="buzo-s" class="variant-btn">S</label>
+                        <input type="radio" name="talla-buzo" id="buzo-m" checked><label for="buzo-m" class="variant-btn">M</label>
+                        <input type="radio" name="talla-buzo" id="buzo-l"><label for="buzo-l" class="variant-btn">L</label>
+                    </div>
+                </div>
+
+                <div class="purchase-actions">
+                    <div class="quantity-selector">
+                        <button class="btn-qty">-</button><span class="qty-number">1</span><button class="btn-qty">+</button>
+                    </div>
+                    <a href="carrito.html" class="btn-primary">Añadir al Carrito</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="product-detail-view product-section-divider">
+            <div class="product-visual">
+                <div class="main-image-card"><img src="img/Mochila.jpg" alt="Mochila"></div>
+            </div>
+            <div class="product-info-panel">
+                <span class="category-tag">Accesorios</span>
+                <h1>Mochila Campus Pro</h1>
+                <p class="product-price">$120.000</p>
+                
+                <p class="product-description">Compartimento acolchado para laptop e impermeable.</p>
+
+                <div class="product-variants">
+                    <span class="variant-label">Capacidad:</span>
+                    <div class="variant-options">
+                        <input type="radio" name="cap-mochila" id="cap-20" checked><label for="cap-20" class="variant-btn">20L</label>
+                        <input type="radio" name="cap-mochila" id="cap-30"><label for="cap-30" class="variant-btn">30L</label>
+                    </div>
+                </div>
+
+                <div class="purchase-actions">
+                    <div class="quantity-selector">
+                        <button class="btn-qty">-</button><span class="qty-number">1</span><button class="btn-qty">+</button>
+                    </div>
+                    <a href="carrito.html" class="btn-primary">Añadir al Carrito</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="product-detail-view product-section-divider">
+            <div class="product-visual">
+                <div class="main-image-card"><img src="img/Mouse.jpg" alt="Mouse"></div>
+            </div>
+            <div class="product-info-panel">
+                <span class="category-tag">Tecnología</span>
+                <h1>Mouse Inalámbrico</h1>
+                <p class="product-price">$45.000</p>
+                
+                <p class="product-description">Diseño ergonómico para largas sesiones de programación y estudio.</p>
+
+                <div class="product-variants">
+                    <span class="variant-label">Color:</span>
+                    <div class="variant-options">
+                        <input type="radio" name="color-mouse" id="m-negro" checked><label for="m-negro" class="variant-btn">Negro</label>
+                        <input type="radio" name="color-mouse" id="m-gris"><label for="m-gris" class="variant-btn">Gris</label>
+                    </div>
+                </div>
+
+                <div class="purchase-actions">
+                    <div class="quantity-selector">
+                        <button class="btn-qty">-</button><span class="qty-number">1</span><button class="btn-qty">+</button>
+                    </div>
+                    <a href="carrito.html" class="btn-primary">Añadir al Carrito</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="product-detail-view product-section-divider">
+            <div class="product-visual">
+                <div class="main-image-card"><img src="img/Termo.jpg" alt="Termo"></div>
+            </div>
+            <div class="product-info-panel">
+                <span class="category-tag">Accesorios</span>
+                <h1>Termo Campus Hydrate</h1>
+                <p class="product-price">$35.000</p>
+                
+                <p class="product-description">Acero inoxidable de doble capa para mantener tus bebidas frías o calientes.</p>
+
+                <div class="product-variants">
+                    <span class="variant-label">Capacidad:</span>
+                    <div class="variant-options">
+                        <input type="radio" name="size-termo" id="t-500"><label for="t-500" class="variant-btn">500ml</label>
+                        <input type="radio" name="size-termo" id="t-750" checked><label for="t-750" class="variant-btn">750ml</label>
+                    </div>
+                </div>
+
+                <div class="purchase-actions">
+                    <div class="quantity-selector">
+                        <button class="btn-qty">-</button><span class="qty-number">1</span><button class="btn-qty">+</button>
+                    </div>
+                    <a href="carrito.html" class="btn-primary">Añadir al Carrito</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="product-detail-view product-section-divider">
+            <div class="product-visual">
+                <div class="main-image-card"><img src="img/Gorra.jpg" alt="Gorra"></div>
+            </div>
+            <div class="product-info-panel">
+                <span class="category-tag">Ropa</span>
+                <h1>Gorra Campus Oficial</h1>
+                <p class="product-price">$25.000</p>
+                
+                <p class="product-description">Gorra clásica con el logo bordado. Ajuste perfecto para cualquier tamaño.</p>
+
+                <div class="product-variants">
+                    <span class="variant-label">Ajuste:</span>
+                    <div class="variant-options">
+                        <input type="radio" name="ajuste-gorra" id="g-ajust" checked><label for="g-ajust" class="variant-btn">Ajustable</label>
+                    </div>
+                </div>
+
+                <div class="purchase-actions">
+                    <div class="quantity-selector">
+                        <button class="btn-qty">-</button><span class="qty-number">1</span><button class="btn-qty">+</button>
+                    </div>
+                    <a href="carrito.html" class="btn-primary">Añadir al Carrito</a>
+                </div>
+            </div>
+        </section>
+
     </main>
 
     <footer class="main-footer">
