@@ -3,45 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CampusShop - Historial</title>
+    <title>CampusShop | Historial</title>
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/layout.css">
     <link rel="stylesheet" href="css/components.css">
     <link rel="stylesheet" href="css/responsive.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <div class="logo">Campus<span>Shop</span></div>
-            <ul>
+    <header class="main-header">
+        <nav class="container">
+            <div class="logo"><a href="index.html">Campus<span>Shop</span></a></div>
+            <ul class="nav-menu">
                 <li><a href="index.html">Inicio</a></li>
                 <li><a href="catalogo.html">Tienda</a></li>
-                <li><a href="carrito.html">Carrito (0)</a></li>
-                <li><a href="perfil.html">Perfil</a></li>
+                <li><a href="carrito.html">Carrito</a></li>
+                <li><a href="perfil.html" class="active">Perfil</a></li>
             </ul>
         </nav>
     </header>
-<main class="user-profile">
-    <div class="user-header">
-        <img src="img/avatar.png" alt="Usuario">
-        <h2>Nombre Usuario</h2>
-    </div>
-    <nav class="profile-menu">
-        <a href="historial.html">Mis Pedidos</a>
-        <a href="vacio.html">Cerrar Sesión</a>
-    </nav>
-</main>
 
-<main>
-    <h1>Mis Pedidos</h1>
-    <div class="order-card">
-        <p>ID: #12345</p>
-        <p>Estado: <span>Enviado</span></p>
-        <p>Fecha: 09/04/2026</p>
-    </div>
-</main>
-    <footer>
-        <p>&copy; 2026 CampusShop - E-Commerce Universitario</p>
+    <main class="container history-view">
+        <header class="history-header">
+            <h1>Mis Pedidos</h1>
+            <p>Consulta el estado de tus compras recientes</p>
+        </header>
+
+        <section class="orders-list">
+            <article class="order-card">
+                <div class="order-info">
+                    <span class="order-number">Pedido #12345</span>
+                    <span class="order-date">15 de Marzo, 2026</span>
+                </div>
+                <div class="order-status status-delivered">Entregado</div>
+                <div class="order-total">
+                    <span>Total:</span>
+                    <strong>$45.000</strong>
+                </div>
+                <button class="btn-secondary">Ver Detalles</button>
+            </article>
+
+            <article class="order-card">
+                <div class="order-info">
+                    <span class="order-number">Pedido #12340</span>
+                    <span class="order-date">10 de Marzo, 2026</span>
+                </div>
+                <div class="order-status status-pending">En camino</div>
+                <div class="order-total">
+                    <span>Total:</span>
+                    <strong>$110.000</strong>
+                </div>
+                <button class="btn-secondary">Ver Detalles</button>
+            </article>
+        </section>
+
+        <div class="history-actions">
+            <a href="perfil.html" class="btn-link">← Volver a mi perfil</a>
+        </div>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <p>&copy; 2026 CampusShop - E-Commerce Universitario</p>
+        </div>
     </footer>
 </body>
 </html>

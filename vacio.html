@@ -3,32 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CampusShop - Vacio</title>
+    <title>CampusShop - Carrito Vacío</title>
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/layout.css">
     <link rel="stylesheet" href="css/components.css">
     <link rel="stylesheet" href="css/responsive.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <div class="logo">Campus<span>Shop</span></div>
-            <ul>
+    <header class="main-header">
+        <nav class="container">
+            <div class="logo"><a href="index.html">Campus<span>Shop</span></a></div>
+            <ul class="nav-menu">
                 <li><a href="index.html">Inicio</a></li>
                 <li><a href="catalogo.html">Tienda</a></li>
-                <li><a href="carrito.html">Carrito (0)</a></li>
+                <li><a href="carrito.html">Carrito</a></li>
                 <li><a href="perfil.html">Perfil</a></li>
             </ul>
         </nav>
     </header>
-<main class="empty-state">
-    <img src="img/empty-cart.svg" alt="Vacío">
-    <h2>¡Vaya! No hay nada aquí</h2>
-    <p>Parece que aún no has agregado productos.</p>
-    <a href="catalogo.html" class="btn-back">Volver a la tienda</a>
-</main>
-    <footer>
-        <p>&copy; 2026 CampusShop - E-Commerce Universitario</p>
+
+    <main class="container empty-state">
+        <div class="bin-avatar-container">
+        <img src="img/Bin.png" alt="Carrito Vacío">
+        </div>
+        
+        <h2>¡Vaya! No hay nada aquí</h2>
+        <p>Parece que aún no has agregado productos a tu carrito o has cerrado sesión.</p>
+        
+        <a href="catalogo.html" class="btn-primary" style="max-width: 250px;">Volver a la tienda</a>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <p>&copy; 2026 CampusShop - E-Commerce Universitario</p>
+        </div>
     </footer>
 </body>
 </html>

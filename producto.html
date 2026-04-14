@@ -3,40 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CampusShop - Producto</title>
+    <title>CampusShop | Producto</title>
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/layout.css">
     <link rel="stylesheet" href="css/components.css">
     <link rel="stylesheet" href="css/responsive.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <div class="logo">Campus<span>Shop</span></div>
-            <ul>
+    <header class="main-header">
+        <nav class="container">
+            <div class="logo"><a href="index.html">Campus<span>Shop</span></a></div>
+            <ul class="nav-menu">
                 <li><a href="index.html">Inicio</a></li>
-                <li><a href="catalogo.html">Tienda</a></li>
-                <li><a href="carrito.html">Carrito (0)</a></li>
+                <li><a href="catalogo.html" class="active">Tienda</a></li>
+                <li><a href="carrito.html">Carrito</a></li>
                 <li><a href="perfil.html">Perfil</a></li>
             </ul>
         </nav>
     </header>
-<main class="product-detail">
-    <div class="product-gallery">
-        <img src="img/principal.jpg" alt="Producto">
-    </div>
-    <div class="product-info">
-        <h1>Nombre del Producto</h1>
-        <span class="price">$00.00</span>
-        <p class="description">Descripción detallada aquí...</p>
-        <div class="tags">
-            <span>Nuevo</span><span>Original</span>
+
+    <main class="container product-detail-view">
+        <div class="product-visual">
+            <div class="main-image-card">
+                <img src="img/producto1.jpg     " alt="Libreta Campus Premium">
+            </div>
         </div>
-        <button class="btn-primary">Agregar al carrito</button>
-    </div>
-</main>
-    <footer>
-        <p>&copy; 2026 CampusShop - E-Commerce Universitario</p>
+
+        <div class="product-info-panel">
+            <span class="category-tag">Papelería Universitaria</span>
+            <h1>Libreta Campus Premium</h1>
+            <p class="product-price">$15.000</p>
+            <p class="product-description">
+                Ideal para tus apuntes más importantes. Esta libreta cuenta con tapa dura resistente, 
+                papel de 90g que evita el traspaso de tinta y un diseño minimalista pensado para el día a día en el campus.
+            </p>
+
+            <div class="purchase-actions">
+                <div class="quantity-selector">
+                    <button class="btn-qty" type="button">-</button>
+                    <span class="qty-number">1</span>
+                    <button class="btn-qty" type="button">+</button>
+                </div>
+                
+                <a href="carrito.html" class="btn-primary">Añadir al Carrito</a>
+            </div>
+
+            <div class="product-meta">
+                <p><strong>Disponibilidad:</strong> En Stock</p>
+                <p><strong>Envío:</strong> Recogida gratuita en Biblioteca</p>
+            </div>
+        </div>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <p>&copy; 2026 CampusShop - E-Commerce Universitario</p>
+        </div>
     </footer>
 </body>
 </html>

@@ -3,39 +3,111 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CampusShop - Checkout</title>
+    <title>CampusShop | Checkout</title>
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/layout.css">
     <link rel="stylesheet" href="css/components.css">
     <link rel="stylesheet" href="css/responsive.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <div class="logo">Campus<span>Shop</span></div>
-            <ul>
+    <header class="main-header">
+        <nav class="container">
+            <div class="logo"><a href="index.html">Campus<span>Shop</span></a></div>
+            <ul class="nav-menu">
                 <li><a href="index.html">Inicio</a></li>
                 <li><a href="catalogo.html">Tienda</a></li>
-                <li><a href="carrito.html">Carrito (0)</a></li>
+                <li><a href="carrito.html">Carrito</a></li>
                 <li><a href="perfil.html">Perfil</a></li>
             </ul>
         </nav>
     </header>
-<main>
-    <form class="checkout-form">
-        <section class="billing-details">
-            <h2>Datos de Envío</h2>
-            <input type="text" placeholder="Nombre completo" required>
-            <input type="email" placeholder="Correo institucional" required>
+
+    <main class="container checkout-layout">
+        <section class="checkout-forms">
+            <div class="checkout-card">
+                <h2><span class="step-number">1</span> Información de Envío</h2>
+                <div class="form-grid">
+                    <div class="form-group full-width">
+                        <label>Nombre Completo</label>
+                        <input type="text" placeholder="Ej. Pedro Pérez" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Teléfono</label>
+                        <input type="tel" placeholder="300 123 4567" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Edificio / Facultad</label>
+                        <input type="text" placeholder="Ej. Edificio de Ingeniería" required>
+                    </div>
+                    <div class="form-group full-width">
+                        <label>Instrucciones adicionales (Opcional)</label>
+                        <input type="text" placeholder="Ej. Dejar en portería">
+                    </div>
+                </div>
+            </div>
+
+            <div class="checkout-card">
+                <h2><span class="step-number">2</span> Método de Pago</h2>
+                <div class="payment-selection">
+                    <label class="payment-option">
+                        <input type="radio" name="payment" checked>
+                        <div class="option-content">
+                            <span class="icon">💳</span>
+                            <span>Tarjeta de Crédito/Débito</span>
+                        </div>
+                    </label>
+                    <label class="payment-option">
+                        <input type="radio" name="payment">
+                        <div class="option-content">
+                            <span class="icon">💵</span>
+                            <span>Efectivo (Contra entrega)</span>
+                        </div>
+                    </label>
+                    <label class="payment-option">
+                        <input type="radio" name="payment">
+                        <div class="option-content">
+                            <span class="icon">📱</span>
+                            <span>Nequi / Daviplata</span>
+                        </div>
+                    </label>
+                </div>
+            </div>
         </section>
-        <section class="order-summary">
-            <h2>Resumen</h2>
-            <button type="submit">Finalizar Compra</button>
-        </section>
-    </form>
-</main>
-    <footer>
-        <p>&copy; 2026 CampusShop - E-Commerce Universitario</p>
+
+        <aside class="checkout-summary">
+            <div class="checkout-card">
+                <h3>Resumen de orden</h3>
+                <div class="summary-mini-list">
+                    <div class="mini-item">
+                        <span>Libreta Campus x1</span>
+                        <span>$15.000</span>
+                    </div>
+                </div>
+                <hr>
+                <div class="summary-total-lines">
+                    <div class="line">
+                        <span>Subtotal</span>
+                        <span>$15.000</span>
+                    </div>
+                    <div class="line">
+                        <span>Envío</span>
+                        <span class="free">Gratis</span>
+                    </div>
+                    <div class="line grand-total">
+                        <span>Total a pagar</span>
+                        <span>$15.000</span>
+                    </div>
+                </div>
+                <button type="submit" class="btn-primary">Finalizar Pedido</button>
+                <a href="carrito.html" class="btn-back-link">← Volver al carrito</a>
+            </div>
+        </aside>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <p>&copy; 2026 CampusShop - E-Commerce Universitario</p>
+        </div>
     </footer>
 </body>
 </html>
