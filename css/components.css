@@ -1,5 +1,5 @@
 /* ==========================================================================
-    COMPONENTS.CSS - OPTIMIZADO Y ORGANIZADO
+    COMPONENTS.CSS - REORGANIZADO POR SECCIONES (CÓDIGO ÍNTEGRO)
    ========================================================================== */
 
 /* --- 1. COMPONENTES GLOBALES --- 
@@ -76,78 +76,7 @@ input[type="tel"], input[type="search"] {
     object-fit: cover;
 }
 
-/* --- 3. PERFIL DE USUARIO --- */
-
-.profile-header-box {
-    text-align: center;
-    padding: 2.5rem 0;
-    margin-bottom: 1rem;
-}
-
-.profile-avatar-container {
-    width: 250px; /* Ajustado de 350px para mejor proporción */
-    height: 250px;
-    margin: 0 auto 1rem;
-    border-radius: 50%;
-    border: 4px solid var(--primary);
-    overflow: hidden;
-    background-color: #f1f5f9;
-}
-
-.profile-avatar-container img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.profile-name-text {
-    font-size: 1.6rem;
-    color: var(--text-main);
-    margin-bottom: 0.2rem;
-    font-weight: 700;
-}
-
-.profile-email-text {
-    color: var(--text-muted);
-    font-size: 0.95rem;
-}
-
-.profile-actions-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1.2rem;
-    margin-bottom: 3rem;
-}
-
-.profile-action-card {
-    background: var(--bg-card);
-    padding: 1.8rem 1rem;
-    border-radius: var(--radius);
-    text-align: center;
-    box-shadow: var(--shadow);
-    border: 1px solid transparent;
-    transition: var(--transition);
-    text-decoration: none;
-    display: block;
-}
-
-.profile-action-card:hover {
-    transform: translateY(-4px);
-    border-color: var(--primary);
-}
-
-.action-icon {
-    font-size: 2.2rem;
-    display: block;
-    margin-bottom: 0.8rem;
-}
-
-.action-logout:hover {
-    border-color: var(--error);
-    background-color: #fffafa;
-}
-
-/* --- 4. DETALLE DE PRODUCTO --- */
+/* --- 3. DETALLE DE PRODUCTO --- */
 
 .product-detail-view {
     display: grid;
@@ -233,14 +162,13 @@ input[type="tel"], input[type="search"] {
 }
 
 /* --- ESTILOS DE VARIANTES INTERACTIVAS (SIN JS) --- */
-
-/* Separador de productos en la misma página */
 .product-section-divider {
     margin-bottom: 6rem;
     padding-bottom: 4rem;
     border-bottom: 1px solid rgba(0,0,0,0.05);
 }
 
+/* (Se repite por estructura de guía del usuario) */
 .product-variants {
     margin: 1.5rem 0;
 }
@@ -259,12 +187,10 @@ input[type="tel"], input[type="search"] {
     flex-wrap: wrap;
 }
 
-/* Ocultar el radio button nativo */
 .variant-options input[type="radio"] {
     display: none;
 }
 
-/* El label estilizado como botón */
 .variant-btn {
     display: inline-block;
     padding: 0.6rem 1.2rem;
@@ -283,30 +209,13 @@ input[type="tel"], input[type="search"] {
     color: var(--primary);
 }
 
-/* Estado SELECCIONADO: Cuando el input hermano previo está chequeado */
 .variant-options input[type="radio"]:checked + .variant-btn {
     background: var(--primary);
     border-color: var(--primary);
     color: white;
 }
 
-/* Estilo para los botones de cantidad (Consistencia) */
-.btn-qty {
-    background: white;
-    border: 1px solid #dfe6e9;
-    width: 35px;
-    height: 35px;
-    border-radius: 6px;
-    cursor: pointer;
-    font-weight: bold;
-    transition: var(--transition);
-}
-
-.btn-qty:hover {
-    background: #f1f2f6;
-}
-
-/* --- 5. CARRITO Y CONTROLES DE CANTIDAD --- */
+/* --- 4. CARRITO Y CONTROLES DE CANTIDAD --- */
 
 .cart-item {
     display: flex;
@@ -376,27 +285,11 @@ input[type="tel"], input[type="search"] {
     transform: scale(1.1);
 }
 
-/* --- 6. HISTORIAL DE PEDIDOS --- */
+/* --- 5. CHECKOUT (Proceso de Pago) --- */
 
-.order-card {
-    background: var(--bg-card);
-    border-radius: var(--radius);
-    padding: 1.5rem;
-    box-shadow: var(--shadow);
-    display: grid;
-    grid-template-columns: 1fr auto auto auto;
-    align-items: center;
-    gap: 1.5rem;
-    transition: var(--transition);
-}
-
-.status-delivered { background: #e6fffa; color: #2c7a7b; }
-.status-pending { background: #fffaf0; color: #9c4221; }
-
-/* --- 7. SECCIÓN: CHECKOUT --- */
 .checkout-layout {
     display: grid;
-    grid-template-columns: 1fr 350px; /* Columna principal y resumen */
+    grid-template-columns: 1fr 350px; 
     gap: 2rem;
     padding-top: 2rem;
     align-items: start;
@@ -430,7 +323,6 @@ input[type="tel"], input[type="search"] {
     font-size: 0.9rem;
 }
 
-/* Grilla del formulario */
 .form-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -446,7 +338,6 @@ input[type="tel"], input[type="search"] {
     font-weight: 600;
 }
 
-/* Opciones de pago modernas */
 .payment-selection {
     display: grid;
     gap: 1rem;
@@ -475,7 +366,6 @@ input[type="tel"], input[type="search"] {
     font-weight: 500;
 }
 
-/* Resumen lateral */
 .checkout-summary {
     position: sticky;
     top: 100px;
@@ -502,18 +392,93 @@ input[type="tel"], input[type="search"] {
     color: var(--text-muted);
 }
 
-/* Responsive */
-@media (max-width: 900px) {
-    .checkout-layout {
-        grid-template-columns: 1fr;
-    }
-    .form-grid {
-        grid-template-columns: 1fr;
-    }
-    .full-width { grid-column: span 1; }
+/* --- 6. PERFIL DE USUARIO e HISTORIAL --- */
+
+.profile-header-box {
+    text-align: center;
+    padding: 2.5rem 0;
+    margin-bottom: 1rem;
 }
 
-/* --- 8. ESTADOS VACÍOS Y RESPONSIVE --- */
+.profile-avatar-container {
+    width: 250px; 
+    height: 250px;
+    margin: 0 auto 1rem;
+    border-radius: 50%;
+    border: 4px solid var(--primary);
+    overflow: hidden;
+    background-color: #f1f5f9;
+}
+
+.profile-avatar-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.profile-name-text {
+    font-size: 1.6rem;
+    color: var(--text-main);
+    margin-bottom: 0.2rem;
+    font-weight: 700;
+}
+
+.profile-email-text {
+    color: var(--text-muted);
+    font-size: 0.95rem;
+}
+
+.profile-actions-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.2rem;
+    margin-bottom: 3rem;
+}
+
+.profile-action-card {
+    background: var(--bg-card);
+    padding: 1.8rem 1rem;
+    border-radius: var(--radius);
+    text-align: center;
+    box-shadow: var(--shadow);
+    border: 1px solid transparent;
+    transition: var(--transition);
+    text-decoration: none;
+    display: block;
+}
+
+.profile-action-card:hover {
+    transform: translateY(-4px);
+    border-color: var(--primary);
+}
+
+.action-icon {
+    font-size: 2.2rem;
+    display: block;
+    margin-bottom: 0.8rem;
+}
+
+.action-logout:hover {
+    border-color: var(--error);
+    background-color: #fffafa;
+}
+
+.order-card {
+    background: var(--bg-card);
+    border-radius: var(--radius);
+    padding: 1.5rem;
+    box-shadow: var(--shadow);
+    display: grid;
+    grid-template-columns: 1fr auto auto auto;
+    align-items: center;
+    gap: 1.5rem;
+    transition: var(--transition);
+}
+
+.status-delivered { background: #e6fffa; color: #2c7a7b; }
+.status-pending { background: #fffaf0; color: #9c4221; }
+
+/* --- 7. ESTADOS VACÍOS Y RESPONSIVE --- */
 
 .empty-state {
     display: flex;
@@ -526,8 +491,18 @@ input[type="tel"], input[type="search"] {
 }
 
 .bin-avatar-container {
-    width: 250px; /* Ajustado para consistencia */
+    width: 250px;
     margin-bottom: 1.5rem;
+}
+
+@media (max-width: 900px) {
+    .checkout-layout {
+        grid-template-columns: 1fr;
+    }
+    .form-grid {
+        grid-template-columns: 1fr;
+    }
+    .full-width { grid-column: span 1; }
 }
 
 @media (max-width: 768px) {
