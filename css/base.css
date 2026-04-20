@@ -8,7 +8,7 @@
     --text-main: #2d3436;
     --text-muted: #636e72;
     --error: #e74c3c;
-    --shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    --shadow: 0 4px 12px rgba(0, 0, 0, 0.5  );
     --radius: 12px;
     --transition: 0.3s ease;
 }

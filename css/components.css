@@ -161,7 +161,7 @@ input[type="tel"], input[type="search"] {
     color: white;
 }
 
-/* --- ESTILOS DE VARIANTES INTERACTIVAS (SIN JS) --- */
+/* --- ESTILOS DE VARIANTES INTERACTIVAS --- */
 .product-section-divider {
     margin-bottom: 6rem;
     padding-bottom: 4rem;
@@ -513,4 +513,67 @@ input[type="tel"], input[type="search"] {
     .profile-actions-grid {
         grid-template-columns: 1fr;
     }
+}
+
+/* --- 8. Iconos favoritos --- */
+
+.btn-fav {
+    background: #fff5f5;
+    border: 3px solid #feb2b2;
+    color: var(--error);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.btn-fav:hover {
+    background: var(--error);
+    color: white;
+    transform: scale(1.1);
+}
+.btn-elim {
+    background: #fff5f5;
+    border: 3px solid #feb2b2;
+    color: var(--error);
+    margin-left:auto;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items:center;
+    justify-content:center;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.btn-elim:hover {
+    background: var(--error);
+    color: white;
+    transform: scale(1.1);
+}
+
+.btn-fav2 {
+    background: #fff5f5;
+    border: 3px solid #feb2b2;
+    color: var(--error);
+    margin-left: auto;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.btn-fav2:hover {
+    background: var(--error);
+    color: white;
+    transform: scale(1.1);
 }
